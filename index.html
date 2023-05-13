@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Calc</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <section class="calculator">
+      <input type="text" id="result" readonly />
+      <input type="button" value="1" onclick="addToResult ('1')" />
+      <input type="button" value="2" onclick="addToResult ('2')" />
+      <input type="button" value="3" onclick="addToResult ('3')" />
+      <input type="button" value="+" onclick="addToResult ('+')" />
+      <input type="button" value="4" onclick="addToResult ('4')" />
+      <input type="button" value="5" onclick="addToResult ('5')" />
+      <input type="button" value="6" onclick="addToResult ('6')" />
+      <input type="button" value="-" onclick="addToResult ('-')" />
+      <input type="button" value="7" onclick="addToResult ('7')" />
+      <input type="button" value="8" onclick="addToResult ('8')" />
+      <input type="button" value="9" onclick="addToResult ('9')" />
+      <input type="button" value="*" onclick="addToResult ('*')" />
+      <input type="button" value="0" onclick="addToResult ('0')" />
+      <input type="button" value="." onclick="addToResult ('.')" />
+      <input type="button" value="=" onclick="calculateResult ()" />
+      <input type="button" value="/" onclick="addToResult ('/')" />
+      <input type="button" value="c" onclick="addToResult ('c')" />
+    </section>
+    <script src="./index.js"></script>
+  </body>
 </html>
